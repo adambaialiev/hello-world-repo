@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-repo",
+  "version": "1.0.0",
+  "description": "Hello World repository with tests",
+  "main": "hello.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"]
+  }
+}

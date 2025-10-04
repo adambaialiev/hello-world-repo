@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 
+function hello() {
+    return "Hello World from JavaScript!";
+}
+
 function main() {
-    console.log("Hello World from JavaScript!");
+    console.log(hello());
     console.log("This is a simple Hello World program.");
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = { hello };
